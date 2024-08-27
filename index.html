@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo_alura" src="./assets/logo_a.png" alt="Logo Alura">
+        </nav>
+    </header>
+
+    <h1 class="titulo">Encriptador de Texto <img src=""></h1>
+
+    <main class="container_contenido">
+        <section>
+            <label for="inputId">
+                <i class="fas fa-exclamation-circle" style="color:red;"></i>
+                Solo ingresar letras minúsculas y sin acentos.
+              </label>              
+        </section>
+        <section class="container_contenido_ingresatexto">
+            <textarea id="inputTexto" placeholder="Ingresa el texto aquí..." class="texto_area"></textarea>
+            <textarea id="resultado" placeholder="Ningun texto encontrado, ingresa el texto a encriptar." class="texto_area" readonly></textarea>
+        </section>
+
+        <section class="seccion_botones">
+            <button class="button" onclick= 'procesarTexto("encriptar")' aria-label="Encriptar Texto">
+                <img src="./assets/encriptarv1.png" alt="Icono Encriptar">Encriptar
+            </button>
+            <button class="button" onclick= 'procesarTexto("desencriptar")' aria-label="Desencriptar Texto">
+                <img src="./assets/desencriptarv1.png" alt="Icono Desencriptar">Desencriptar
+            </button>  
+            <button class="button" onclick="copiarTexto()" aria-label="Copiar Texto">
+                <img src="./assets/copyv1.png" alt="Icono Copiar">Copiar texto
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="derechosR">
+            <h2 class="presentacion_enlaces-redes">Copyright © 2024 Eduar Tejedor. Todos los derechos reservados.</h2>
+            <h3>REDES SOCIALES</h3>
+        </div>
+        
+        <div class="presentacion_enlaces">
+            <a class="presentacion_enlaces-botones" href="https://portafolio-cv-eta.vercel.app/">
+                <img src="./assets/perfil.png" alt="Icono Gmail">
+            </a>
+            <a class="presentacion_enlaces-botones" href="https://github.com/etejedor92" target="_blank">
+                <img src="./assets/github.png" alt="Icono GitHub">
+            </a>
+            <a class="presentacion_enlaces-botones" href="https://www.linkedin.com/in/ejtejedor/" target="_blank">
+                <img src="./assets/linkedin.png" alt="Icono LinkedIn">
+            </a>
+        </div>
+        
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
